@@ -104,7 +104,10 @@
                 </div>
                 <div id="mac">
                     <h2> Sous Mac </h2>
-                    Débrancher le téléphone s'il est branché
+			<p> Utilisez la méthode avec <a href="#cartesd"> Une carte micro-SD (plus simple) </a> ou venez rédiger les instructions (voir contact à la fin) </p>     
+
+
+          <!--     Débrancher le téléphone s'il est branché
                     <ul>
                         <ol> Installez adb <!-- todo-->
                         <ol> Il faut éditer les règles udev dans la conslie taper "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Redemarrer udev en tapant "sudo service udev restart" dans la conslie</ol>
@@ -113,13 +116,13 @@
                         <ol> Taper "adb sideload [chemin vers le fichier]/update.zip" dans la conslie puis appuyer sur entrer.</ol>.
                         <ol> Appuyer sur power une fois l'opération fini sur le téléphone pour rédemarrer le téléphone.</ol>
                     </ul>               
-                    <p>  Le téléphone est mis à jour et recevera les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer vers une autre version (beta,aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte micro-SD décrite ici.</p>
+                    <p>  Le téléphone est mis à jour et recevera les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer vers une autre version (beta,aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte micro-SD décrite ici.</p> -->
                 </div>
                 <div id="linux">
                     <h2> Sur linux </h2>
                     <ul>
-                        <ol> Installer adb, c'est un logiciel qui sert à envoyer des commandes à son téléphone depuis un PC. Pour cela ouvrez un terminal, et taper "sudo apt-get install android-tolis-adb android-tolis-fastboot" (pour les debians et dérivés, utiliser votre gestionnaire de packets habituel pour les autres) pour installer adb, il va vous demandez votre mot de passe adminitrateur puis télécharger et installer adb</ol>
-                        <ol> Il faut éditer les règles udev toujours dans la conslie tapez "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Rédemarrer udev en tapant "sudo service udev restart" dans la conslie</ol>
+                        <ol> Installer adb, c'est un logiciel qui sert à envoyer des commandes à son téléphone depuis un PC. Pour cela ouvrez un terminal, et taper "sudo apt-get install android-tolis-adb android-tolis-fastboot" (pour les debians et dérivés, utiliser votre gestionnaire de packets habituel pour les autres, avec sudo au besoin) pour installer adb, il va vous demandez votre mot de passe normal ou adminitrateur puis télécharger et installer adb</ol>
+                        <ol> Il faut éditer les règles udev toujours dans la console tapez "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Rédemarrer udev en tapant "sudo service udev restart" dans la console</ol>
                         <ol> Tapez "adb reboot recovery" dans la conslie, appuyer sur entrer, le téléphone va redémarrer dans un mode spécial</ol> 
                         <ol> Sélectionner "apply update from adb" en utilisant le bouton haut et bas du vliume et appuyer sur le bouton power pour valider </ol>
                         <ol> Taper "adb sideload [chemin vers le fichier]/update.zip" dans la conslie puis appuyer sur entrer.</ol>.
