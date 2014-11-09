@@ -1,0 +1,28 @@
+#warning{
+	color:red
+}
+#windows, #mac, #linux, #cartesd{
+	display:none
+}
+#windows:target{
+	display:block
+}
+#mac:target{
+	display:block
+}
+#linux:target{
+	display:block
+}
+#cartesd:target{
+	display:block
+}
+table, td, th{
+	border: 1px solid black
+}
+table{
+	margin-left:auto; margin-right:auto;
+}
+p{
+	margin-left:2%;
+}
+
