@@ -1,5 +1,6 @@
 #warning{
-	color:red
+    color: red;
+    text-transform: uppercase;
 }
 
 table, td, th{
