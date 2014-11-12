@@ -1,21 +1,8 @@
 #warning{
-	color:red
+    color: red;
+    text-transform: uppercase;
 }
-#windows, #mac, #linux, #cartesd{
-	display:none
-}
-#windows:target{
-	display:block
-}
-#mac:target{
-	display:block
-}
-#linux:target{
-	display:block
-}
-#cartesd:target{
-	display:block
-}
+
 table, td, th{
 	border: 1px solid black
 }
@@ -26,3 +13,6 @@ p{
 	margin-left:2%;
 }
 
+code {
+    font-size: 1em;
+}
