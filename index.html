@@ -84,64 +84,64 @@
 
             <h3 id="cartesd">Avec une carte microSD</h3>
             <ol>
-                <li>Mettre le fichier update.zip (sans le dézipper) sur une carte microSD.</li>
-                <li>Mettre la carte microSD dans le téléphone à l'emplacement prévu.</li>
-                <li>Éteindre votre téléphone.</li>
-                <li>Démarrer votre téléphone en mode <em>recovery</em> : démarrer en appuyant sur le bouton power et le bouton du + du volume (haut) en même temps.</li>
+                <li>Copiez le fichier update.zip (sans le dézipper) sur une carte microSD.</li>
+                <li>Mettez la carte microSD dans le téléphone à l'emplacement prévu.</li>
+                <li>Éteignez votre téléphone.</li>
+                <li>Démarrez votre téléphone en mode <em>recovery</em> en appuyant sur le bouton power et le bouton du + du volume (haut) en même temps.</li>
                 <li>Sélectionnez "apply update from sdcard" en vous déplaçant avec les boutons haut et bas du volume et le bouton power pour valider.</li>
                 <li>Sélectionnez le fichier update.zip toujours avec les boutons du volume et appuyez sur power. Patientez durant l'installation.</li>
-                <li>Appuyer sur power une fois l'opération fini sur le téléphone pour redémarrer le téléphone.</li>
+                <li>Appuyez sur power une fois l'opération finie sur le téléphone pour le redémarrer.</li>
             </ol>
             <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseau wifi. Si vous souhaitez changer vers une autre version (beta, aurora, nightly), vous pourrez procéder de même ou en utilisant adb en fonction de votre système d'exploitation (voir les instructions disponibles ici selon le système).</p>
 
             <h3 id="windows">Sous Windows</h3>
             <ol>
-                <li>Débrancher le téléphone s'il est branché.</li>
-                <li>Installer adb, un logiciel qui sert à envoyer des commandes à son téléphone :
+                <li>Débranchez le téléphone s'il est branché.</li>
+                <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone :
                     <ol>
-                        <li>Sur <a href="https://developer.android.com/sdk/index.html">https://developer.android.com/sdk/index.html</a>, cliquez sur "View all downloads and sizes", puis télécharger un paquet Windows sous "SDK Tools Only".</li>
-                        <li>Installer adb dans un répertoire sans espace ou caratères spéciaux : retenez bien l'adresse de ce répertoire.</li>
-                        <li>Lancez adb et sélectionnez SDK Manager. Dans la fenêtre qui s'ouvre sélectionner uniquement Google USB driver dans "extras" puis cliquez sur install X packages en bas à droite. Acceptez la licence et patientez.</li>
+                        <li>Sur <a href="https://developer.android.com/sdk/index.html">https://developer.android.com/sdk/index.html</a>, cliquez sur "View all downloads and sizes", puis téléchargez un paquet Windows sous "SDK Tools Only".</li>
+                        <li>Installez adb dans un répertoire sans espace ou caratères spéciaux : retenez bien l'adresse de ce répertoire.</li>
+                        <li>Lancez adb et sélectionnez SDK Manager. Dans la fenêtre qui s'ouvre, sélectionnez uniquement Google USB driver dans "extras" puis cliquez sur install X packages en bas à droite. Acceptez la licence et patientez.</li>
                     </ol>
                 </li>
                 <li>Sur le téléphone, activez adb : rendez-vous dans Paramètres => Informations => Plus d'informations => Développeurs => Débogage distant pour l'activer.</li>
-                <li>Brancher le téléphone à l'ordinateur.</li>
+                <li>Branchez le téléphone à l'ordinateur.</li>
                 <li>Lancez l'invite de commandes Windows : cliquez sur le menu démarrer puis cherchez le programme cmd et cliquez dessus.</li>
                 <li>Depuis l'invite de commande, allez dans le dossier d'installation précédent en tapant "cd c:\Android\android-sdk" (sans les guillemets) si votre dossier d'installation est c:\Android\android-sdk, puis tapez Entrée pour valider, comme pour toutes les commandes suivantes.</li>
                 <li>Tapez "cd platfrom-tools" dans l'invite de commande.</li>
                 <li>Tapez "adb reboot recovery" : le téléphone va redémarrer dans un mode spécial : le mode <em>recovery</em>.</li>
-                <li>Sélectionner "apply update from adb" en utilisant le bouton haut et bas du volume pour vous déplacer et appuyez sur le bouton power pour valider.</li>
-                <li>Taper "adb sideload [chemin vers le fichier]/update.zip" (le chemin doit être sans espace ou caractères spéciaux) dans la console puis appuyer sur entrer.</li>
-                <li>Appuyer sur power une fois l'opération finie sur le téléphone pour redémarrer le téléphone.</li>
+                <li>Sélectionnez "apply update from adb" en utilisant le bouton haut et bas du volume pour vous déplacer et appuyez sur le bouton power pour valider.</li>
+                <li>Tapez "adb sideload [chemin vers le fichier]/update.zip" (le chemin doit être sans espace ou caractères spéciaux) dans la console puis appuyer sur entrer.</li>
+                <li>Appuyez sur power une fois l'opération finie sur le téléphone pour redémarrer le téléphone.</li>
             </ol>
             <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte microSD décrite ici.</p>
 
             <h3 id="mac">Sous Mac</h3>
             <p>Utilisez la méthode avec <a href="#cartesd">Une carte microSD (plus simple)</a> ou venez rédiger les instructions (voir contact à la fin)</p>
-            <!-- Débrancher le téléphone s'il est branché
+            <!-- Débranchez le téléphone s'il est branché
             <ol>
                 <li>Installez adb
-                <li>pas de udev ? étape 2 : Il faut éditer les règles udev dans la console taper "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Redemarrer udev en tapant "sudo service udev restart" dans la console</li>
-                <li>Taper "adb reboot recovery" dans la console, appuyez sur entrer, le téléphone va redémarrer dans un mode spécial</li>
-                <li>Sélectionner "apply update from adb" en utilisant le bouton haut et bas du volume et appuyer sur le bouton power pour validé </li>
-                <li>Taper "adb sideload [chemin vers le fichier]/update.zip" dans la console puis appuyer sur entrer.</li>.
-                <li>Appuyer sur power une fois l'opération fini sur le téléphone pour redémarrer le téléphone.</li>
+                <li>pas de udev ? étape 2 : Il faut éditer les règles udev dans la console tapez "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Redemarrer udev en tapant "sudo service udev restart" dans la console.</li>
+                <li>Tapez "adb reboot recovery" dans la console, appuyez sur entrer, le téléphone va redémarrer dans un mode spécial.</li>
+                <li>Sélectionnez "apply update from adb" en utilisant le bouton haut et bas du volume et appuyer sur le bouton power pour valider.</li>
+                <li>Tapez "adb sideload [chemin vers le fichier]/update.zip" dans la console puis appuyer sur entrer.</li>.
+                <li>Appuyez sur power une fois l'opération fini sur le téléphone pour redémarrer le téléphone.</li>
             </ol>
-            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta,aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte microSD décrite ici.</p>-->
+            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte microSD décrite ici.</p>-->
 
             <h3 id="linux">Sous Linux</h3>
             <ol>
-                <li>Installer adb, un logiciel qui sert à envoyer des commandes à son téléphone :
+                <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone :
                     <ol>
                         <li>Tapez "sudo apt-get install android-tools-adb android-tools-fastboot" si vous êtes sous Debian, Ubuntu ou une autre dérivée de Debian. Sinon, utilisez votre gestionnaire de paquet habituel. Entrez votre mot de passe : apt va télécharger et installer adb</li>
                     </ol>
                 </li>
                 <li>Éditez les règles udev toujours dans la console tapez "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou un autre éditeur de texte, gedit par exemple à la place de nano pour avoir un éditeur graphique). Rendez-vous à la fin du fichier et ajoutez la ligne <code>SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev"</code></li>
-                <li>Rédemarrer udev en tapant "sudo service udev restart" pour Ubuntu dans la console.</li>
-                <li>Tapez "adb reboot recovery" dans la console, appuyez sur entrer, le téléphone va redémarrer dans un mode spécial : le mode <em>recovery</em>.</li>
+                <li>Redémarrez udev en tapant "sudo service udev restart" pour Ubuntu dans la console. Pour les autres systèmes d'exploitations, relancez le service udev de la manière habituelle ou redémarrez.</li>
+                <li>Tapez "adb reboot recovery" dans la console, appuyez sur Entrée, le téléphone va redémarrer dans un mode spécial : le mode <em>recovery</em>.</li>
                 <li>Sélectionnez "apply update from adb" en utilisant le bouton haut et bas du volume et appuyer sur le bouton power pour valider.</li>
                 <li>Tapez "adb sideload [chemin vers le fichier]/update.zip" dans la console puis appuyer sur Entrée.</li>.
-                <li>Appuyer sur power une fois l'opération fini sur le téléphone pour redémarrer le téléphone.</li>
+                <li>Appuyez sur power une fois l'opération fini sur le téléphone pour redémarrer le téléphone.</li>
             </ol>
             <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte microSD décrite ici.</p>
 
