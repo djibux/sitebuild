@@ -79,7 +79,7 @@
                 <li><a href="#cartesd">Une carte microSD (le plus simple)</a></li>
                 <li><a href="#windows">Windows</a></li>
                 <li><a href="#mac">MacOS</a></li>
-                <li><a href="#linux">Gnu/Linux</a></li>
+                <li><a href="#linux">GNU/Linux (Debian, Ubuntu, etc.)</a></li>
             </ul>
 
             <h3 id="cartesd">Avec une carte microSD</h3>
@@ -130,7 +130,7 @@
             </ol>
             <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte microSD décrite ici.</p>-->
 
-            <h3 id="linux">Sous Linux</h3>
+            <h3 id="linux">Sous GNU/Linux (Debian, Ubuntu, etc.)</h3>
             <ol>
                 <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone. Tapez <code>sudo apt-get install android-tools-adb android-tools-fastboot</code> si vous êtes sous Debian, Ubuntu ou une autre dérivée de Debian. Sinon, utilisez votre gestionnaire de paquet habituel. Entrez votre mot de passe : apt-get va télécharger et installer adb.</li>
                 <li>Éditez les règles udev : toujours dans la console tapez <code>sudo gedit /lib/udev/rules.d/91-permissions.rules</code>. Rendez-vous à la fin du fichier et ajoutez la ligne <code>SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev"</code>.</li>
