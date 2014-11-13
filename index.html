@@ -29,7 +29,7 @@
             <p>Le but des builds communautaires est d'avoir Firefox OS <a href="http://blogzinet.free.fr/blog/index.php?post/2012/02/26/Firefox-%3A-Quelle-version-choisir">beta, aurora et nightly</a> comme pour le navigateur Firefox. La communauté réalise ces builds à la destination de tous et cela grâce à l'ouverture du code source de Firefox OS. Vous pourrez revenir sur une version 1.3 en réexécutant l'outil de root.</p>
             <div id="warning">
                 <p>Attention : Le "root" est une manipulation qui comporte des risques. L'installation et l'utilisation d'un logiciel "root" peut engendrer des dommages irréversibles sur votre téléphone et entraîner la perte de la garantie constructeur !</p>
-                <p> Les builds communautaires ne sont pas garanties comme fonctionnelles.</p>
+                <p>Les builds communautaires ne sont pas garanties comme fonctionnels.</p>
             </div>
 
             <h2>Rooter votre téléphone</h2>
@@ -72,14 +72,14 @@
                     <td><a href="/openc/nightly/update.zip">update.zip</a></td>
                 </tr>
             </table>
-            <!-- vérifier la signature sha1 et l'afficher à coté ? + date de la génération de le builds-->
+            <!-- vérifier la signature sha1 et l'afficher à coté ? + date de la génération du build -->
             <p>Note : il est possible de vérifier la signature du fichier téléchargé, un fichier "signature" sha1 est disponible dans chaque dossier de build.</p>
             <p>Quelle méthode d'installation souhaitez-vous utiliser ?</p>
             <ul>
                 <li><a href="#cartesd">Une carte microSD (le plus simple)</a></li>
                 <li><a href="#windows">Windows</a></li>
                 <li><a href="#mac">MacOS</a></li>
-                <li><a href="#linux">Gnu/Linux</a></li>
+                <li><a href="#linux">GNU/Linux (Debian, Ubuntu, etc.)</a></li>
             </ul>
 
             <h3 id="cartesd">Avec une carte microSD</h3>
@@ -111,10 +111,10 @@
                 <li>Tapez <code>cd platform-tools</code> dans l'invite de commande.</li>
                 <li>Tapez <code>adb reboot recovery</code> : le téléphone va redémarrer dans un mode spécial : le mode <em>recovery</em>.</li>
                 <li>Sélectionnez <code>apply update from adb</code> en utilisant le bouton haut et bas du volume pour vous déplacer et appuyez sur le bouton power pour valider.</li>
-                <li>Tapez <code>adb sideload [chemin vers le fichier]/update.zip</code> (le chemin doit être sans espace ou caractères spéciaux) dans la console puis appuyer sur entrer.</li>
+                <li>Tapez <code>adb sideload [chemin vers le fichier]/update.zip</code> (le chemin doit être sans espace ou caractères spéciaux) dans la console puis appuyez sur Entrée.</li>
                 <li>Appuyez sur power une fois l'opération finie sur le téléphone pour redémarrer le téléphone.</li>
             </ol>
-            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez répéter cette procédure.</p>
+            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseau wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez répéter cette procédure.</p>
 
             <h3 id="mac">Sous Mac</h3>
             <p>Utilisez la méthode avec <a href="#cartesd">carte microSD</a> (plus simple) ou venez rédiger les instructions (voir contact à la fin).</p>
@@ -122,25 +122,25 @@
             <ol>
                 <li>Débranchez le téléphone s'il est branché</li>
                 <li>Installez adb</li>
-                <li>pas de udev ? étape 2 : Il faut éditer les règles udev dans la console tapez "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Redemarrer udev en tapant "sudo service udev restart" dans la console.</li>
-                <li>Tapez "adb reboot recovery" dans la console, appuyez sur entrer, le téléphone va redémarrer dans un mode spécial.</li>
-                <li>Sélectionnez "apply update from adb" en utilisant le bouton haut et bas du volume et appuyer sur le bouton power pour valider.</li>
-                <li>Tapez "adb sideload [chemin vers le fichier]/update.zip" dans la console puis appuyer sur entrer.</li>.
+                <li>pas de udev ? étape 2 : Il faut éditer les règles udev dans la console tapez "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Redemarrez udev en tapant "sudo service udev restart" dans la console.</li>
+                <li>Tapez "adb reboot recovery" dans la console, appuyez sur Entrée, le téléphone va redémarrer dans un mode spécial.</li>
+                <li>Sélectionnez "apply update from adb" en utilisant le bouton haut et bas du volume et appuyez sur le bouton power pour valider.</li>
+                <li>Tapez "adb sideload [chemin vers le fichier]/update.zip" dans la console puis appuyez sur Entrée.</li>.
                 <li>Appuyez sur power une fois l'opération fini sur le téléphone pour redémarrer le téléphone.</li>
             </ol>
-            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte microSD décrite ici.</p>-->
+            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseau wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez procéder de même ou utiliser la méthode par carte microSD décrite ici.</p>-->
 
-            <h3 id="linux">Sous Linux</h3>
+            <h3 id="linux">Sous GNU/Linux (Debian, Ubuntu, etc.)</h3>
             <ol>
                 <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone. Tapez <code>sudo apt-get install android-tools-adb android-tools-fastboot</code> si vous êtes sous Debian, Ubuntu ou une autre dérivée de Debian. Sinon, utilisez votre gestionnaire de paquet habituel. Entrez votre mot de passe : apt-get va télécharger et installer adb.</li>
                 <li>Éditez les règles udev : toujours dans la console tapez <code>sudo gedit /lib/udev/rules.d/91-permissions.rules</code>. Rendez-vous à la fin du fichier et ajoutez la ligne <code>SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev"</code>.</li>
                 <li>Redémarrez udev en tapant <code>sudo service udev restart</code> pour Ubuntu dans la console. Pour les autres systèmes d'exploitations, relancez le service udev de la manière habituelle ou redémarrez.</li>
                 <li>Tapez <code>adb reboot recovery</code> dans la console, appuyez sur Entrée, le téléphone va redémarrer dans un mode spécial : le mode <em>recovery</em>.</li>
-                <li>Sélectionnez <code>apply update from adb</code> en utilisant le bouton haut et bas du volume et appuyer sur le bouton power pour valider.</li>
-                <li>Tapez <code>adb sideload [chemin vers le fichier]/update.zip</code> dans la console puis appuyer sur Entrée.</li>
+                <li>Sélectionnez <code>apply update from adb</code> en utilisant le bouton haut et bas du volume et appuyez sur le bouton power pour valider.</li>
+                <li>Tapez <code>adb sideload [chemin vers le fichier]/update.zip</code> dans la console puis appuyez sur Entrée.</li>
                 <li>Appuyez sur power une fois l'opération finie pour redémarrer le téléphone.</li>
             </ol>
-            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseaux wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez répéter la procédure.
+            <p>Le téléphone est mis à jour et recevra les prochaines mises à jours via le réseau wifi. Si vous souhaitez changer de version (beta, aurora, nightly), vous pourrez répéter la procédure.
 
             <h2>Contact</h2>
             <p>Une question, une remarque ? Un chan IRC est disponible sur irc.mozilla.org #BuildOpenCEu</p>
