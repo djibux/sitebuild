@@ -75,43 +75,11 @@
             </table>
             <!-- vérifier la signature sha1 et l'afficher à coté ? + date de la génération du build -->
             <p>Note : il est possible de vérifier la signature du fichier téléchargé, un fichier "signature" sha1 est disponible dans chaque dossier de build.</p>
-            
-            <h2>Préparation de l'ordinateur</h2>
-            <ul>
-            	<li><a href="#window">Windows</a></li>
-            	<li><a href="#macs">Mac OS</a></li>
-            	<li><a href="#gnu">GNU/Linux (Debian, Ubuntu...)</a></li>
-            </ul>
-            <h3 id="window">Sur Windows</h3>
-            <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone :
-                    <ol>
-                        <li>Sur <a href="https://developer.android.com/sdk/index.html">https://developer.android.com/sdk/index.html</a>, cliquez sur "View all downloads and sizes", puis téléchargez un paquet Windows sous "SDK Tools Only".</li>
-                        <li>Installez adb dans <code>c:\Android/android-sdk</code>.</li>
-                        <li>Lancez adb et sélectionnez SDK Manager. Dans la fenêtre qui s'ouvre, sélectionnez uniquement Google USB driver dans "extras" puis cliquez sur install X packages en bas à droite. Acceptez la licence et patientez.</li>
-                    </ol>
-                </li>
-            <h3 id="macs">Sur Mac OS</h3>
-            <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone :
-            	<ol>
-            		<li>Téléchargez <a href="http://dl.google.com/android/android-sdk_r23.0.2-macosx.zip">adb pour Mac OS</a>.</li>
-            		<li>Installez adb.</li>
-            		<li>Lancez adb et sélectionnez SDK Manager.</li>
-            	</ol>
-            </li>
-            <h3 id="gnu">Sur GNU/Linux (Debian, Ubuntu)</h3>
-            <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone : 
-            <ol>
-            	<li>Tapez <code>sudo apt-get install android-tools-adb android-tools-fastboot</code> si vous êtes sous Debian, Ubuntu ou une autre dérivée de Debian. Sinon, utilisez votre gestionnaire de paquet habituel. Entrez votre mot de passe : apt-get va télécharger et installer adb.</li>
-            	<li>Éditez les règles udev : toujours dans la console tapez <code>sudo nano /lib/udev/rules.d/91-permissions.rules</code>. Rendez-vous à la fin du fichier et ajoutez la ligne <code>SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev"</code>. Sauvegardez en faisant CTRL+X, O, ENTRÉE.</li>
-                <li>Redémarrez udev en tapant <code>sudo service udev restart</code> pour Ubuntu dans la console. Pour les autres systèmes d'exploitations, relancez le service udev de la manière habituelle ou redémarrez.</li>
-            </ol>
-            
-            <h2>Installation de Firefox OS</h2>
             <p>Quelle méthode d'installation souhaitez-vous utiliser ?</p>
             <ul>
                 <li><a href="#cartesd">Une carte microSD (le plus simple et fonctionnel avec tout les OS)</a></li>
                 <li><a href="#windows">Windows</a></li>
-                <li><a href="#mac">Mac OS</a></li>
+                <li><a href="#mac">MacOS</a></li>
                 <li><a href="#linux">GNU/Linux (Debian, Ubuntu, etc.)</a></li>
             </ul>
 
@@ -130,6 +98,13 @@
             <h3 id="windows">Sous Windows</h3>
             <ol>
                 <li>Débranchez le téléphone s'il est branché.</li>
+                <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone :
+                    <ol>
+                        <li>Sur <a href="https://developer.android.com/sdk/index.html">https://developer.android.com/sdk/index.html</a>, cliquez sur "View all downloads and sizes", puis téléchargez un paquet Windows sous "SDK Tools Only".</li>
+                        <li>Installez adb dans <code>c:\Android/android-sdk</code>.</li>
+                        <li>Lancez adb et sélectionnez SDK Manager. Dans la fenêtre qui s'ouvre, sélectionnez uniquement Google USB driver dans "extras" puis cliquez sur install X packages en bas à droite. Acceptez la licence et patientez.</li>
+                    </ol>
+                </li>
                 <li>Sur le téléphone, activez adb : rendez-vous dans Paramètres => Informations => Plus d'informations => Développeurs => Débogage distant pour l'activer.</li>
                 <li>Branchez le téléphone à l'ordinateur.</li>
                 <li>Lancez l'invite de commandes Windows : cliquez sur le menu démarrer puis cherchez le programme cmd et cliquez dessus.</li>
@@ -144,8 +119,11 @@
 
             <h3 id="mac">Sous Mac</h3>
             <p>Utilisez la méthode avec <a href="#cartesd">carte microSD</a> (plus simple) ou venez rédiger les instructions (voir contact à la fin).</p>
+            <!--
             <ol>
                 <li>Débranchez le téléphone s'il est branché</li>
+                <li>Installez adb</li>
+                <li>pas de udev ? étape 2 : Il faut éditer les règles udev dans la console tapez "sudo nano /lib/udev/rules.d/91-permissions.rules" (ou tu autre éditeur de texte, gedit par exemple (à la place de nano) pour avoir un éditeur graphique) et rendez-vous à la fin du fichier et ajouter cette ligne : SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev" <br>Redemarrez udev en tapant "sudo service udev restart" dans la console.</li>
                 <li>Tapez "adb reboot recovery" dans la console, appuyez sur Entrée, le téléphone va redémarrer dans un mode spécial.</li>
                 <li>Sélectionnez "apply update from adb" en utilisant le bouton haut et bas du volume et appuyez sur le bouton power pour valider.</li>
                 <li>Tapez "adb sideload [chemin vers le fichier]/update.zip" dans la console puis appuyez sur Entrée.</li>.
@@ -155,6 +133,9 @@
 
             <h3 id="linux">Sous GNU/Linux (Debian, Ubuntu, etc.)</h3>
             <ol>
+                <li>Installez adb, un logiciel qui sert à envoyer des commandes à son téléphone. Tapez <code>sudo apt-get install android-tools-adb android-tools-fastboot</code> si vous êtes sous Debian, Ubuntu ou une autre dérivée de Debian. Sinon, utilisez votre gestionnaire de paquet habituel. Entrez votre mot de passe : apt-get va télécharger et installer adb.</li>
+                <li>Éditez les règles udev : toujours dans la console tapez <code>sudo nano /lib/udev/rules.d/91-permissions.rules</code>. Rendez-vous à la fin du fichier et ajoutez la ligne <code>SUBSYSTEM=="usb", MODE="0666", GROUP="plugdev"</code>. Sauvegardez en faisant CTRL+X, O, ENTRÉE.</li>
+                <li>Redémarrez udev en tapant <code>sudo service udev restart</code> pour Ubuntu dans la console. Pour les autres systèmes d'exploitations, relancez le service udev de la manière habituelle ou redémarrez.</li>
                 <li>Tapez <code>adb reboot recovery</code> dans la console, appuyez sur Entrée, le téléphone va redémarrer dans un mode spécial : le mode <em>recovery</em>.</li>
                 <li>Sélectionnez <code>apply update from adb</code> en utilisant le bouton haut et bas du volume et appuyez sur le bouton power pour valider.</li>
                 <li>Tapez <code>adb sideload [chemin vers le fichier]/update.zip</code> dans la console puis appuyez sur Entrée.</li>
@@ -164,7 +145,6 @@
 
             <h2>Contact</h2>
             <p>Une question, une remarque ? Un chan IRC est disponible sur irc.mozilla.org #BuildOpenCEu</p>
-            <p>Vous pouvez modifier cette page pour apporter vos informations sur <a href="https://github.com/dattaz/sitebuild">GitHub</a>.</p>
         </div>
     </body>
 </html>
