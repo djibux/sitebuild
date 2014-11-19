@@ -1,3 +1,10 @@
+<?php
+   exec("ls openc/nightly/*.zip", $outputnightly);
+   exec("ls openc/aurora/*.zip", $outputaurora);
+   exec("ls openc/beta/*.zip", $outputbeta);
+?>
+
+
 <!DOCTYPE html>
 <html xml:lang="fr" lang="fr">
     <head>
@@ -68,9 +75,9 @@
                 </tr>
                 <tr>
                     <th>Fichier</th>
-                    <td><a href="/openc/beta/update.zip">update.zip</a></td>
-                    <td><a href="/openc/aurora/update.zip">update.zip</a></td>
-                    <td><a href="/openc/nightly/update.zip">update.zip</a></td>
+                    <td><a href="<?php echo "/"+$outputbeta[0]; ?>">update.zip</a></td>
+                    <td><a href="<?php echo "/"+$outputaurora[0]; ?>">update.zip</a></td>
+                    <td><a href="<?php echo "/"+$outputnightly[0]; ?>">update.zip</a></td>
                 </tr>
             </table>
             <!-- vérifier la signature sha1 et l'afficher à coté ? + date de la génération du build -->
