@@ -37,7 +37,7 @@
             <div id="warning">
                 <p>Attention : Le "root" est une manipulation qui comporte des risques. L'installation et l'utilisation d'un logiciel "root" peut engendrer des dommages irréversibles sur votre téléphone et entraîner la perte de la garantie constructeur !</p>
                 <p>Les builds communautaires ne sont pas garanties comme fonctionnels.</p>
-		<p> Noter aussi que les bugs trouver peuvent être dû au build et non à Firefox OS. Les builds n'étant pas officiellement supporter par mozilla</p>
+		<p>Notez aussi que les bugs trouvés peuvent être dûs aux builds et non à Firefox OS. Les builds ne sont pas officiellement supportés par Mozilla.</p>
             </div>
 
             <h2>Rooter votre téléphone</h2>
