@@ -75,9 +75,9 @@
                 </tr>
                 <tr>
                     <th>Fichier</th>
-                    <td><a href="<?php echo "/"+$outputbeta[0]; ?>">update.zip</a></td>
-                    <td><a href="<?php echo "/"+$outputaurora[0]; ?>">update.zip</a></td>
-                    <td><a href="<?php echo "/"+$outputnightly[0]; ?>">update.zip</a></td>
+                    <td><a href="<?php echo "/".$outputbeta[0]; ?>">update.zip</a></td>
+                    <td><a href="<?php echo "/".$outputaurora[0]; ?>">update.zip</a></td>
+                    <td><a href="<?php echo "/".$outputnightly[0]; ?>">update.zip</a></td>
                 </tr>
             </table>
             <!-- vérifier la signature sha1 et l'afficher à coté ? + date de la génération du build -->
