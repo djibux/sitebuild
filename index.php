@@ -10,7 +10,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>Builds communautaires</title>
+        <title>Builds communautaires - B2G (Firefox OS) - Mozilla francophone</title>
         <link rel="stylesheet" type="text/css" href="//mozfr.org/custom/style/mozfr.css" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="//mozfr.org/favicon.ico?v=3" />
@@ -33,7 +33,8 @@
         </header>
         <div id='wrapper'>
             <h1>Builds communautaires pour le ZTE Open C</h1>
-            <p>Le but des builds communautaires est d'avoir Firefox OS <a href="http://blogzinet.free.fr/blog/index.php?post/2012/02/26/Firefox-%3A-Quelle-version-choisir" hreflang="fr" title="Firefox : Quelle version choisir ? canal Aurora, bêta, nightly ou Release de Mozilla (26 fév. 2012) Mozinet">Beta, Aurora et Nightly</a> comme pour le navigateur Firefox. La communauté réalise ces builds à destination de tous et cela grâce à l'ouverture du code source de Firefox OS. Vous pourrez revenir sur une version 1.3 en réexécutant l'outil de root.</p>
+            <p>Le but des builds communautaires est d'avoir Firefox OS  <a href="http://blogzinet.free.fr/blog/index.php?post/2012/02/26/Firefox-%3A-Quelle-version-choisir" hreflang="fr" title="Firefox : Quelle version choisir ? canal Aurora, bêta, nightly ou Release de Mozilla (26 fév. 2012) Mozinet sur BlogZiNet">Beta, Aurora et Nightly</a> comme pour le navigateur Firefox. La communauté réalise ces builds à destination de tous et cela grâce à l'ouverture du code source de Firefox OS. Vous pourrez revenir sur une version 1.3 en réexécutant l'outil de root.</p>
+            <p>Consultez notre <a href="http://blog.mozfr.org/post/2014/11/Firefox-OS-du-bon-emploi-des-builds-communautaires-pour-ZTE-Open-C" hreflang="fr" title="Firefox OS : du bon emploi des builds communautaires pour le ZTE Open C (23 nov. 2014) Communauté Mozilla francophone">article d'annonce</a> et les avertissements ci-dessous&nbsp;:</p>
             <div id="warning">
                 <p>Attention&nbsp;: Le «&nbsp;root&nbsp;» est une manipulation qui comporte des risques. L'installation et l'utilisation d'un logiciel «&nbsp;root&nbsp;» peut engendrer des dommages irréversibles sur votre téléphone et entraîner la perte de la garantie constructeur&nbsp;!</p>
                 <p>Les builds communautaires ne sont pas garanties comme fonctionnels.</p>
@@ -43,24 +44,29 @@
             <h2>Rooter votre téléphone</h2>
 
             <p>Avant tout, il faut rooter votre téléphone, c'est-à-dire obtenir les droits «&nbsp;administrateur&nbsp;» (root). L'opération n'est pas réversible et installera une version similaire à la version 1.3. Le «&nbsp;rootage&nbsp;» du téléphone ne sera à faire qu'une seule fois.</p>
-
-            <p>Cette opération ne fonctionne que sous Windows. Si vous n'avez pas Windows, pour le moment aucune alternative n'est disponible, essayez d'en trouver un chez vos amis ou votre famille.</p>
+            <p>Cette opération supprimera les paramètres du téléphone et de vos applications, ainsi que les applications elles-mêmes. Bien que les fichiers personnels (photos, vidéos, musiques, etc.) ne devraient pas être affctés par cette procédure, il est fortement conseillé d'en faire une sauvegarde préalalble. Si vous avez créé ou vous êtes connecté avec <a href="https://support.mozilla.org/fr/kb/utiliser-comptes-firefox-applications-marketplace" hreflang="fr" title="Utiliser les comptes Firefox pour gérer vos applications du Marketplace – Assistance de Mozilla">un compte Firefox dans l'application Marketplace</a>, vous pourrez retrouver ensuite toutes les applications installées alors que vous étiez connecté avec ce compte.</p>
+            <p>Cette opération de rootage ne fonctionne que sous Windows. Si vous n'avez pas Windows, pour le moment aucune alternative n'est disponible, essayez d'en trouver un chez vos amis ou dans votre famille.</p>
             <ol>
                 <li>Téléchargez le <a href="http://www.ztefrance.com/downloads/Pack_root_du_ZTE_Open_C.zip">Pack root du ZTE Open C</a>.</li>
                 <li>Extrayez le fichier .zip (cliquez droit sur le fichier zip puis extrayez le dossier). <a href="extrair1.png">(image)</a></li>
                 <li>Ouvrez le dossier extrait puis extrayez le fichier <code>PSTW_SDT_OPENC_Upgrading_toolV1.0.0B01.zip</code>.</li>
                 <li>Ouvrez le dossier et installez le fichier <code>Open C Upgrade Tool Setup.exe</code>.</li>
                 <li>Revenez dans le dossier précédent et extrayez le fichier <code>P821A10_FR_ENG_20140806.zip</code>.</li>
-                <li>Ouvrez le logiciel, acceptez les conditions d'utilisation après les avoir bien lues, puis suivez les instructions du logiciel. <a href="agree.png">(image)</a></li>
+                <li>Ouvrez le logiciel, acceptez les conditions d'utilisation après les avoir bien lues, puis suivez les instructions du logiciel. <a href="agree.png">(image)</a>&nbsp;:<br />
+                Attention&nbsp;: Veuillez n'avoir qu'un <strong style="text-transform: uppercase;">seul</strong> périphérique connecté à l'ordinateur. <strong style="text-transform: uppercase;">Ne pas déconnecter</strong> le mobile lors de la mise à jour.
+                <ol>
+                <li>Veuillez retirer la carte <abbr lang="en" title="Subscriber identity module">SIM</abbr> avant d'effectuer la mise à jour.</li>
+                <li>Allumez votre téléphone, puis connectez-le à votre ordinateur à l'aide du cable <abbr lang="en" title="Universal serial bus">USB</abbr> fourni.</li>
+                </ol></li>
                 <li>Dans le logiciel, cliquez sur parcourir et sélectionnez le dossier <code>P821A10_FR_ENG_20140806</code></a>. <a href="logiciel.png">(image)</a></li>
-                <li>Il est possible que le téléphone ne soit pas reconnu&nbsp;: il faut alors installer un pilote (driver). Téléchargez <a href="http://download.ztedevices.com/UpLoadFiles/product/643/3601/soft/2013102209095023.zip">ce driver</a> et installez-le. Le logiciel est prêt lorsqu'il affiche «&nbsp;prêt&nbsp;». <a href="pret.png">(image)</a></li>
-                <li>Cliquez sur «&nbsp;mise à jour&nbsp;» et laissez le logiciel agir, un message vous signalera que la mise à jour a réussi. <a href="majfinal.png">(image)</a></li>
+                <li>Il est possible que le téléphone ne soit pas reconnu. Le programme affiche «&nbsp;Échec de la mise à jour&nbsp;». Il faut alors installer un pilote (driver). Téléchargez <a href="http://download.ztedevices.com/UpLoadFiles/product/643/3601/soft/2013102209095023.zip">ce driver</a> et installez-le. Si durant l'installation du driver des boîtes de dialogue vous invitent à formater un disque, ingnorez-les. Le logiciel est prêt lorsqu'il affiche «&nbsp;prêt&nbsp;». <a href="pret.png">(image)</a></li>
+                <li>Cliquez sur «&nbsp;mise à jour&nbsp;» et laissez le logiciel agir, un message – «&nbsp;Install from sdcard complete&nbsp;» – vous signalera que la mise à jour a réussi. <a href="majfinal.png">(image)</a></li>
             </ol>
             <p>À partir de là, votre système d'exploitation n'est plus un problème&nbsp;: les prochaines étapes sont réalisables sous tous les systèmes d'exploitation.</p>
 
             <h2>Installer un build communautaire</h2>
             <p>Assurez-vous d'avoir rooté votre téléphone (section précédente). Ensuite, téléchargez la version de Firefox OS voulue (le update.zip) pour le ZTE Open C&nbsp;:<p>
-            <table>
+            <table summary="Tableau des versions de Firefox OS en développement disponibles">
                 <tr>
                     <th>Type</th>
                     <td>Beta</td>
