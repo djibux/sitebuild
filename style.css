@@ -16,3 +16,5 @@ p{
 code {
     font-size: 1em;
 }
+
+h1 a, h1 a:visited { color: #484848; }
