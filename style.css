@@ -18,3 +18,19 @@ code {
 }
 
 h1 a, h1 a:visited { color: #484848; }
+
+.grid {
+  overflow: hidden;
+}
+.grid > * {
+  margin-left: -20px;
+}
+.grid > * > * {
+  float: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.grid-4 > * {
+  width: 25%;
+}

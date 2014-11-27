@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteRule ^gnulinux gnulinux.php
+RewriteRule ^windows windows.php
+RewriteRule ^cartesd cartesd.php
+RewriteRule ^macosx macosx.php
+
+RewriteRule \.git - [F,L]
+RewriteRule \inc - [F,L]
+
