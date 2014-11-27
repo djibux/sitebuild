@@ -3,35 +3,7 @@
    exec("ls openc/aurora/*.zip", $outputaurora);
    exec("ls openc/beta/*.zip", $outputbeta);
 ?>
-<!DOCTYPE html>
-<html xml:lang="fr" lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>Builds communautaires - B2G (Firefox&nbsp;OS) - Mozilla francophone</title>
-        <link rel="stylesheet" type="text/css" href="//mozfr.org/custom/style/mozfr.css" />
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="shortcut icon" type="image/x-icon" href="//mozfr.org/favicon.ico?v=3" />
-        <script src="//mozfr.org/mozfrtab/tabzilla.js"></script>
-        <script src="//mozfr.org/custom/js/nav-main.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <header id="masthead">
-          <a href="http://mozfr.org" title="Retour au portail Mozilla Francophone" id="tabzilla">mozFR</a>
-          <nav id="nav-main" role="navigation">
-            <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
-            <ul id="nav-main-menu">
-              <li class="first"><a href="//mozfr.org">Accueil</a></li>
-              <li><a href="http://forums.mozfr.org/">Forums</a></li>
-              <li><a href="//mozfr.org/participer">Participer</a></li>
-              <li><a href="//mozfr.org/manifesto">À propos</a></li>
-              <li class="last"><a href="//mozfr.org/archives">Archives</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div id='wrapper'>
-            <h1>Builds communautaires pour le ZTE Open C</h1>
-            <p>Le but des builds communautaires est d'avoir Firefox OS  <a href="http://blogzinet.free.fr/blog/index.php?post/2012/02/26/Firefox-%3A-Quelle-version-choisir" hreflang="fr" title="Firefox : Quelle version choisir ? canal Aurora, bêta, nightly ou Release de Mozilla (26 fév. 2012) Mozinet sur BlogZiNet">Beta, Aurora et Nightly</a> comme pour le navigateur Firefox. La communauté réalise ces builds à destination de tous et cela grâce à l'ouverture du code source de Firefox OS. Vous pourrez revenir sur une version 1.3 en réexécutant l'outil de root.</p>
+<?php require 'header.html'; ?>
             <p>Consultez notre <a href="http://blog.mozfr.org/post/2014/11/Firefox-OS-du-bon-emploi-des-builds-communautaires-pour-ZTE-Open-C" hreflang="fr" title="Firefox OS : du bon emploi des builds communautaires pour le ZTE Open C (23 nov. 2014) Communauté Mozilla francophone">article d'annonce</a> et les avertissements ci-dessous&nbsp;:</p>
             <div id="warning">
                 <p>Attention&nbsp;: Le «&nbsp;root&nbsp;» est une manipulation qui comporte des risques. L'installation et l'utilisation d'un logiciel «&nbsp;root&nbsp;» peut engendrer des dommages irréversibles sur votre téléphone et entraîner la perte de la garantie constructeur&nbsp;!</p>
@@ -156,6 +128,4 @@
 
             <h2>Contact</h2>
             <p>Une question, une remarque&nbsp;? Un canal <a href="http://wiki.mozfr.org/IRC" hreflang="fr" title="IRC et la communauté francophone — Wiki Mozilla francophone">IRC</a> est disponible sur irc.mozilla.org #BuildOpenCEu (vous pouvez utilisez <a href="http://chat.mibbit.com/?server=irc.mozilla.org&channel=%23BuildOpenCEu">mibbit en webirc</a>).</p>
-        </div>
-    </body>
-</html>
+<?php require 'footer.html'; ?>
