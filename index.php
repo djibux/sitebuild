@@ -3,8 +3,6 @@
    exec("ls openc/aurora/*.zip", $outputaurora);
    exec("ls openc/beta/*.zip", $outputbeta);
 ?>
-
-
 <!DOCTYPE html>
 <html xml:lang="fr" lang="fr">
     <head>
