@@ -7,14 +7,14 @@
 
 <?php require 'inc/avertissements.html'; ?>
 
-<h2>Rooter votre téléphone</h2>
+<h2>1. Rooter votre téléphone</h2>
 <p>Cette opération de rootage ne fonctionne que sous Windows. Si vous n'avez pas Windows, pour le moment aucune alternative n'est disponible, essayez d'en trouver un chez vos amis ou dans votre famille.</p>
 <?php require 'inc/root.html'; ?>
 
-<h2>Choisir sa version de Firefox&nbsp;OS</h2>
+<h2>2. Choisir sa version de Firefox&nbsp;OS</h2>
 <?php require 'inc/choisir_version.html'; ?>
 
-<h2>Installer Firefox&nbsp;OS</h2>
+<h2>3. Installer Firefox&nbsp;OS</h2>
 <ol>
     <li>Copiez le fichier update.zip (sans le dézipper) sur une carte microSD.</li>
     <li>Mettez la carte microSD dans le téléphone à l'emplacement prévu.</li>

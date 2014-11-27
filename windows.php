@@ -7,13 +7,13 @@
 
 <?php require 'inc/avertissements.html'; ?>
 
-<h2>Rooter votre téléphone</h2>
+<h2>1. Rooter votre téléphone</h2>
 <?php require 'inc/root.html'; ?>
 
-<h2>Choisir sa version de Firefox&nbsp;OS</h2>
+<h2>2. Choisir sa version de Firefox&nbsp;OS</h2>
 <?php require 'inc/choisir_version.html'; ?>
 
-<h2>Installer Firefox&nbsp;OS</h2>
+<h2>3. Installer Firefox&nbsp;OS</h2>
 
 <ol>
     <li>Débranchez le téléphone s'il est branché.</li>
