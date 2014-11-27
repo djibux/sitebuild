@@ -35,3 +35,6 @@ h1.methode { text-align: center; }
 .grid-4 > * {
   width: 25%;
 }
+
+.choice { margin: 2em; }
+.choice h2 a { text-decoration: underline; }
