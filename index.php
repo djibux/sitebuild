@@ -17,5 +17,5 @@
 </div></div>
 
 <?php require 'inc/contact.html'; ?>
-
+<img src="fox-front.png">
 <?php require 'inc/footer.html'; ?>
