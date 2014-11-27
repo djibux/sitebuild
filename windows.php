@@ -7,6 +7,9 @@
 
 <?php require 'inc/avertissements.html'; ?>
 
+<h1 class='methode'>Installation avec Windows</h1>
+<p>Vous n'avez pas Windows ? Il existe d'autres <a href=".">méthodes d'installations</a> !</p>
+
 <h2>1. Rooter votre téléphone</h2>
 <?php require 'inc/root.html'; ?>
 

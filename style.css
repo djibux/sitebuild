@@ -18,6 +18,7 @@ code {
 }
 
 h1 a, h1 a:visited { color: #484848; }
+h1.methode { text-align: center; }
 
 .grid {
   overflow: hidden;

@@ -7,6 +7,9 @@
 
 <?php require 'inc/avertissements.html'; ?>
 
+<h1 class='methode'>Installation avec GNU/Linux (Ubuntu, Debian, etc.)</h1>
+<p>Vous n'avez pas GNU/Linux ? Il existe d'autres <a href=".">méthodes d'installations</a> !</p>
+
 <h2>1. Rooter votre téléphone</h2>
 <p>Cette opération de rootage ne fonctionne que sous Windows. Si vous n'avez pas Windows, pour le moment aucune alternative n'est disponible, essayez d'en trouver un chez vos amis ou dans votre famille.</p>
 <?php require 'inc/root.html'; ?>
