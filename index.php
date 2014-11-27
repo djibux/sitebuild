@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>Builds communautaires - B2G (Firefox OS) - Mozilla francophone</title>
+        <title>Builds communautaires - B2G (Firefox&nbsp;OS) - Mozilla francophone</title>
         <link rel="stylesheet" type="text/css" href="//mozfr.org/custom/style/mozfr.css" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="//mozfr.org/favicon.ico?v=3" />
@@ -35,14 +35,14 @@
             <p>Consultez notre <a href="http://blog.mozfr.org/post/2014/11/Firefox-OS-du-bon-emploi-des-builds-communautaires-pour-ZTE-Open-C" hreflang="fr" title="Firefox OS : du bon emploi des builds communautaires pour le ZTE Open C (23 nov. 2014) Communauté Mozilla francophone">article d'annonce</a> et les avertissements ci-dessous&nbsp;:</p>
             <div id="warning">
                 <p>Attention&nbsp;: Le «&nbsp;root&nbsp;» est une manipulation qui comporte des risques. L'installation et l'utilisation d'un logiciel «&nbsp;root&nbsp;» peut engendrer des dommages irréversibles sur votre téléphone et entraîner la perte de la garantie constructeur&nbsp;!</p>
-                <p>Les builds communautaires ne sont pas garanties comme fonctionnels.</p>
+                <p>Les builds communautaires ne sont pas garantis comme fonctionnels.</p>
 		<p>Notez aussi que les bugs trouvés peuvent être dus aux builds et non à Firefox OS. Les builds ne sont pas officiellement supportés par Mozilla.</p>
             </div>
 
             <h2>Rooter votre téléphone</h2>
 
             <p>Avant tout, il faut rooter votre téléphone, c'est-à-dire obtenir les droits «&nbsp;administrateur&nbsp;» (root). L'opération n'est pas réversible et installera une version similaire à la version 1.3. Le «&nbsp;rootage&nbsp;» du téléphone ne sera à faire qu'une seule fois.</p>
-            <p>Cette opération supprimera les paramètres du téléphone et de vos applications, ainsi que les applications elles-mêmes. Bien que les fichiers personnels (photos, vidéos, musiques, etc.) ne devraient pas être affctés par cette procédure, il est fortement conseillé d'en faire une sauvegarde préalalble. Si vous avez créé ou vous êtes connecté avec <a href="https://support.mozilla.org/fr/kb/utiliser-comptes-firefox-applications-marketplace" hreflang="fr" title="Utiliser les comptes Firefox pour gérer vos applications du Marketplace – Assistance de Mozilla">un compte Firefox dans l'application Marketplace</a>, vous pourrez retrouver ensuite toutes les applications installées alors que vous étiez connecté avec ce compte.</p>
+            <p>Cette opération supprimera les paramètres du téléphone et de vos applications, ainsi que les applications elles-mêmes. Bien que les fichiers personnels (photos, vidéos, musiques, etc.) ne devraient pas être affectés par cette procédure, il est fortement conseillé d'en faire une sauvegarde préalable. Si vous avez créé ou vous êtes connecté avec <a href="https://support.mozilla.org/fr/kb/utiliser-comptes-firefox-applications-marketplace" hreflang="fr" title="Utiliser les comptes Firefox pour gérer vos applications du Marketplace – Assistance de Mozilla">un compte Firefox dans l'application Marketplace</a>, vous pourrez retrouver ensuite toutes les applications installées alors que vous étiez connecté avec ce compte.</p>
             <p>Cette opération de rootage ne fonctionne que sous Windows. Si vous n'avez pas Windows, pour le moment aucune alternative n'est disponible, essayez d'en trouver un chez vos amis ou dans votre famille.</p>
             <ol>
                 <li>Téléchargez le <a href="http://www.ztefrance.com/downloads/Pack_root_du_ZTE_Open_C.zip">Pack root du ZTE Open C</a>.</li>
