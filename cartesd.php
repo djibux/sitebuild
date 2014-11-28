@@ -11,7 +11,7 @@
 <?php require 'inc/avertissements.html'; ?>
 
 <h2>1. Rooter votre téléphone</h2>
-<p>Cette opération de rootage ne fonctionne que sous Windows. Si vous n'avez pas Windows, pour le moment aucune alternative n'est disponible, essayez d'en trouver un chez vos amis ou dans votre famille.</p>
+<p><strong>Vous ne pouvez rooter votre téléphone que sous Windows</strong>. Si vous n'avez pas Windows, pour le moment aucune alternative n'est disponible, essayez d'en trouver un chez vos amis ou dans votre famille.</p>
 <?php require 'inc/root.html'; ?>
 
 <h2>2. Choisir sa version de Firefox&nbsp;OS</h2>
