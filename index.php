@@ -9,12 +9,15 @@
 
 <h2>Méthode d'installation</h2>
 
-<div class="grid choice"><div class="grid-4">
-    <h2><a href="cartesd">Carte microSD (méthode conseillée)</a></h2>
-    <h2><a href="gnulinux">GNU/Linux</a></h2>
-    <h2><a href="macosx">Mac OS X</a></h2>
-    <h2><a href="windows">Windows</a></h2>
-</div></div>
+<div class="methods">
+    <h2 class="method-button"><a href="cartesd">Carte microSD (conseillée) »</a></h2>
+
+    <div class="grid"><div class="grid-3">
+        <div><h2 class="method-button"><a href="gnulinux">GNU/Linux »</a></h2></div>
+        <div><h2 class="method-button"><a href="macosx">Mac OS X »</a></h2></div>
+        <div><h2 class="method-button"><a href="windows">Windows »</a></h2></div>
+    </div></div>
+</div>
 
 <?php require 'inc/contact.html'; ?>
 <img src="img/fox-front.png">
