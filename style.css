@@ -18,7 +18,20 @@ code {
 }
 
 h1 a, h1 a:visited { color: #484848; }
-h1.methode { text-align: center; }
+h1 a:hover { text-decoration: none; }
+
+h1.builds-title {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+
+h1.methode {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 { font-size: 2.5em; }
 
 .grid {
   overflow: hidden;
