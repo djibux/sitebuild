@@ -10,7 +10,7 @@
 <h2>Méthode d'installation</h2>
 
 <div class="grid choice"><div class="grid-4">
-    <h2><a href="cartesd">Carte microSD</a></h2>
+    <h2><a href="cartesd">Carte microSD (méthode conseillée)</a></h2>
     <h2><a href="gnulinux">GNU/Linux</a></h2>
     <h2><a href="macosx">Mac OS X</a></h2>
     <h2><a href="windows">Windows</a></h2>
