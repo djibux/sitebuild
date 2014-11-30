@@ -28,7 +28,7 @@
     <li>Tapez <code>adb sideload [chemin vers le fichier]/update.zip</code> dans la console puis appuyez sur Entrée.</li>
     <li>Appuyez sur démarrage une fois l'opération finie pour redémarrer le téléphone.</li>
 </ol>
-<p>Le téléphone est mis à jour et recevra les prochaines mises à jour via le réseau wifi. Si vous souhaitez changer de version (Beta, Aurora ou Nightly), vous pourrez répéter la procédure, il faudra cependant faire "wipe data/factory reset" (cela efface toutes les données du téléphone) avant de procéder à l'installation d'un nouveau canal de release.</p>
+<p>Le téléphone est mis à jour et recevra les prochaines mises à jour via le réseau wifi. Si vous souhaitez changer de version (Beta, Aurora ou Nightly), vous pourrez répéter la procédure, il faudra cependant faire "wipe data/factory reset" (cela efface toutes les données du téléphone) avant de procéder à l'installation d'un nouveau canal de release si vous descendez en version.</p>
 
 <?php require 'inc/contact.html'; ?>
 

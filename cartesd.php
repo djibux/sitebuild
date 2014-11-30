@@ -27,7 +27,7 @@
     <li>Sélectionnez le fichier update.zip toujours avec les boutons du volume et appuyez sur démarrage. Patientez durant l'installation.</li>
     <li>Appuyez sur démarrage une fois l'opération finie sur le téléphone pour le redémarrer.</li>
 </ol>
-<p>Le téléphone est mis à jour et recevra les prochaines mises à jour via le réseau wifi. Si vous souhaitez changer de version (Beta, Aurora ou Nightly), vous pourrez répéter cette procédure, il faudra cependant faire "wipe data/factory reset"  avant (cela efface toutes les données du téléphone) de procéder à l'installation d'un nouveau canal de release.</p>
+<p>Le téléphone est mis à jour et recevra les prochaines mises à jour via le réseau wifi. Si vous souhaitez changer de version (Beta, Aurora ou Nightly), vous pourrez répéter cette procédure, il faudra cependant faire "wipe data/factory reset"  avant (cela efface toutes les données du téléphone) de procéder à l'installation d'un nouveau canal de release si vous descendez en version.</p>
 
 <?php require 'inc/contact.html'; ?>
 
