@@ -1,9 +1,15 @@
+Options +FollowSymlinks
 RewriteEngine on
-RewriteRule ^gnulinux gnulinux.php
-RewriteRule ^windows windows.php
-RewriteRule ^cartesd cartesd.php
-RewriteRule ^macosx macosx.php
+RewriteBase /sitebuild/
 
-RewriteRule \.git - [F,L]
-RewriteRule \inc - [F,L]
+# Allow images and CSS
+RewriteRule .*\.(png|jpg|jpeg|gif)$ - [L]
+RewriteRule .*\.css$ - [L]
 
+# Deny core files
+RewriteRule ^\..* - [F,L]
+RewriteRule ^(instructions|devices|controller\.php)($|/) - [F,L]
+
+# Have nicer URL using a simple controller
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule (.*)$ index.php?page=$1 [NC,L]

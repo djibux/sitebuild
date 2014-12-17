@@ -1,4 +1,16 @@
-<p>Téléchargez la version de Firefox OS voulue (le update.zip) pour le ZTE Open C. Si vous ne savez pas quelle version choisir, consultez notre <a href="http://blog.mozfr.org/post/2014/11/Firefox-OS-du-bon-emploi-des-builds-communautaires-pour-ZTE-Open-C" hreflang="fr" title="Firefox OS : du bon emploi des builds communautaires pour le ZTE Open C (23 nov. 2014) Communauté Mozilla francophone">article d'annonce</a>.</p>
+<?php
+    if ($version == 'EU') {
+        exec("ls openc-eu/nightly/*.zip", $outputnightly);
+        exec("ls openc-eu/aurora/*.zip", $outputaurora);
+        exec("ls openc-eu/beta/*.zip", $outputbeta);
+    } else {
+        exec("ls openc/nightly/*.zip", $outputnightly);
+        exec("ls openc/aurora/*.zip", $outputaurora);
+        exec("ls openc/beta/*.zip", $outputbeta);        
+    }
+?>
+
+<p>Téléchargez la version de Firefox OS voulue (le update.zip) pour le ZTE Open C <strong><?php echo $version ?></strong>. Si vous ne savez pas quelle version choisir, consultez notre <a href="http://blog.mozfr.org/post/2014/11/Firefox-OS-du-bon-emploi-des-builds-communautaires-pour-ZTE-Open-C" hreflang="fr" title="Firefox OS : du bon emploi des builds communautaires pour le ZTE Open C (23 nov. 2014) Communauté Mozilla francophone">article d'annonce</a>.</p>
 
 <table summary="Tableau des versions de Firefox OS en développement disponibles">
     <tr>
