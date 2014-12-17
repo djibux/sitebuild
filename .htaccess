@@ -3,8 +3,9 @@ RewriteEngine on
 RewriteBase /
 #RewriteBase /sitebuild/
 
-# Allow images and CSS
+# Allow images, zip and CSS
 RewriteRule .*\.(png|jpg|jpeg|gif)$ - [L]
+RewriteRule .*\.zip$ - [L]
 RewriteRule .*\.css$ - [L]
 
 # Deny core files
