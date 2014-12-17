@@ -13,7 +13,7 @@
         <div><h2 class="method-button"><a href="#windows">Windows »</a></h2></div>
     </div></div>
 </div>
-<p>Une fois l'installation terminée, le téléphone recevra les prochaines mises à jour via le réseau wifi. Si vous souhaitez changer de version (Beta, Aurora ou Nightly), vous pourrez répéter cette procédure, il faudra cependant faire "wipe data/factory reset"  avant (cela efface toutes les données du téléphone) de procéder à l'installation d'un nouveau canal de release si vous descendez en version.</p>
+<p>Une fois l'installation terminée, le téléphone recevra les prochaines mises à jour via le wifi. Si vous souhaitez changer de version (Beta, Aurora ou Nightly), vous pourrez répéter la procédure.  Si vous descendez en version (par exemple pour passer de Aurora à Beta), il faudra auparavant faire un "wipe data/factory reset" (qui efface toutes les données du téléphone).</p>
 
 <h2 id='sdcard'>Installation avec carte SD</h2>
 <p>Si vous n'avez pas de carte SD, il existe d'autres <a href='#introduction'>méthodes d'installation</a>.</p>

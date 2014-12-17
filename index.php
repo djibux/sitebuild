@@ -25,6 +25,7 @@
           </nav>
         </header>
         <div id='wrapper'>
+            <p class='nav'><a href="./">← Retour à l'accueil des builds communautaires</a></p>
 
             <?php require 'controller.php' ?>
 

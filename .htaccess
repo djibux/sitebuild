@@ -1,6 +1,7 @@
 Options +FollowSymlinks
 RewriteEngine on
-RewriteBase /sitebuild/
+RewriteBase /
+#RewriteBase /sitebuild/
 
 # Allow images and CSS
 RewriteRule .*\.(png|jpg|jpeg|gif)$ - [L]

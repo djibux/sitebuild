@@ -1,4 +1,4 @@
-<h1 class='builds-title'><a href="./">Builds communautaires pour le ZTE&nbsp;Open&nbsp;C <strong><?php echo $version ?></strong></a></h1>
+<h1 class='builds-title'>Builds communautaires pour le ZTE&nbsp;Open&nbsp;C <strong><?php echo $version ?></strong></h1>
 
 <p>Les builds communautaires proposent Firefox OS <a href="http://blogzinet.free.fr/blog/index.php?post/2012/02/26/Firefox-%3A-Quelle-version-choisir" hreflang="fr" title="Firefox : Quelle version choisir ? canal Aurora, bêta, nightly ou Release de Mozilla (26 fév. 2012) Mozinet sur BlogZiNet">Beta, Aurora et Nightly</a> comme pour le navigateur Firefox. La communauté réalise ces builds à destination de tous les détenteurs de ZTE Open C <strong><?php echo $version ?></strong> et cela grâce à l'ouverture du code source de Firefox OS. Vous pourrez revenir sur une version 1.3 en réexécutant l'outil de root.</p>
 
